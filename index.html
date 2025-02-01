@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+   
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Navbar Overlay start-->
+            <div class="col-lg-3 col-md-3 bg-black">
+                <div class="navbar-overlay scrollable scrollable1 main fsize" id="navbarOverlay">
+                    <span class="close-btn" id="closeBtn">&times;</span>
+                    <ul class="list-unstyled text-white-50">
+                        <div class="text-center text-white pt-2">
+                            <img src="assets/img/photo.png" alt="profile"
+                                class="w-50 rounded-circle border border-5 border-dark">
+                            <h4 class="fw-bold pt-3">Bhavika Chavhan</h4>
+                        </div>
+
+                        <div class="text-center text-white py-4 px-4 px-sm-0">
+                            <a href="https://github.com/dashboard"
+                                class="me-md-2 me-sm-0 px-2 py-1 nav-link d-inline rounded-circle border border-4 border-dark"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/bhavika-chavhan-111b79278"
+                                class="me-md-2 me-sm-0 px-2 py-1 nav-link d-inline  rounded-circle border border-4 border-dark"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="#contact"
+                                class="px-2 py-1 nav-link d-inline rounded-circle border border-4 border-dark"><i
+                                    class="fa-solid fa-envelope"></i></a>
+                        </div>
+
+
+                        <li class="nav-item ps-2 py-3">
+                            <a href="#home" class="nav-link" aria-current="page">
+                                <i class="ri-home-4-line"></i> &nbsp; Home
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 py-3">
+                            <a href="#about" class="nav-link">
+                                <i class="ri-user-line"></i> &nbsp; About
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 py-3">
+                            <a href="#skills" class="nav-link">
+                                <i class="ri-book-line"></i> &nbsp; Skills
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 py-3">
+                            <a href="file:///C:/Users/bhavi/Downloads/Bhavika-Chavhan-FlowCV-Resume-20250129.pdf" class="nav-link">
+                                <i class="ri-file-text-line"></i> &nbsp; Resume
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 py-3">
+                            <a href="#service" class="nav-link">
+                                <i class="ri-service-line"></i> &nbsp; Services
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 py-3">
+                            <a href="#acedmic" class="nav-link">
+                                <i class="ri-graduation-cap-line"></i> &nbsp; Acedmics
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 py-3">
+                            <a href="#contact" class="nav-link">
+                                <i class="ri-mail-line"></i> &nbsp; Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- Navbar Overlay end-->
+
+            <!-- Hamburger Menu (only visible on medium screens) -->
+            
+                <button class="btn hum text-white d-md-none position-fixed px-2 py-1 m-2 w-auto" id="menuToggle">☰</button>
+           
+
+            <!-- Main Content -->
+            <div class="col-lg-9 col-md-9 scrollable scrollable1 content">
+                
+                <!-- home section start-->
+                <section class="home p-lg-4 p-md-4 p-sm-4 p-3 py-5 mt-3 mx-3 rounded-4 shadow" id="home">
+                    <div>
+                        <h class="fw-bold">Bhavika Chavhan</h>
+                        <p class="text-secondary mt-2 mb-4">I am <span class="text-dark fw-bold" id="element"></span></p>                            
+                        <p>Aspiring to start my career in an entry-to-associate-level role with a reputable company, leveraging my knowledge and skills to contribute effectively.</p>
+                        <a href="./index.html" class="btn btn-primary p-2 me-3 rounded mt-4"><i class="fa-regular fa-eye"></i>&nbsp; View Portfolio</a>
+                        <a href="#contact" class="btn btn-primary p-2 rounded mt-4"><i class="fa-solid fa-envelope"></i>&nbsp; Hire me</a>
+                    </div>
+                </section>
+                <!-- home section end-->
+
+                <!-- About section start -->
+                <section class="about p-lg-4 p-md-4 p-sm-4 p-2 pb-2 mt-5 mx-3 text-2xl rounded-4 shadow" id="about">
+                    <h1 class="fw-bold pb-3">About</h1>
+                    <hr class="rounded-4 divide" />
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 ">
+                                <img src="./assets/img/photo.png" alt="" class="mb-4 border rounded size1">
+                            </div>
+                            <div class="col-lg-9 pb-4">
+                                <h2 class="fw-bold pb-3">Hello,</h2>
+                                <p class="pb-3">I'm Bhavika Chavhan, a web developer with 1 year/3 months of experience in building
+                                    clean,
+                                    responsive, and user-friendly websites. I specialize in web development, design, and
+                                    project
+                                    management, ensuring every project is delivered efficiently and meets client
+                                    expectations.
+                                    <br>
+
+                                    I enjoy turning ideas into functional and visually appealing digital solutions. With
+                                    a
+                                    focus
+                                    on
+                                    using modern tools like Tailwind CSS and others, I strive to create websites that
+                                    not
+                                    only
+                                    look
+                                    great but also perform well.
+                                    <br>
+                                    Let’s work together to bring your ideas to life!
+
+                                </p>
+                                <ul class="list-unstyled pb-3">
+                                    <li><b>Name:</b> Bhavika Chavhan</li>
+
+                                    <li><b>Birthday:</b> 26 March, 2003</li>
+
+                                    <li><b>Location: </b>Ujjain, Madhya Pradesh</li>
+
+                                    <li><b>Email: </b>bhervi2024@gmail.com</li>
+
+                                </ul>
+                                <a href="file:///C:/Users/bhavi/Downloads/Bhavika-Chavhan-FlowCV-Resume-20250129.pdf"
+                                target="_blank" class="btn btn-primary ">
+                                <i class="fa-solid fa-cloud-arrow-down rounded-4"></i>&nbsp; Download Resume
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- About section end -->
+
+                <!-- skills section start -->
+                <section class="skills p-lg-4 p-md-4 p-sm-4 p-3 pb-2 mt-5 mx-3 text-2xl rounded-4 shadow" id="skills">
+                    <h1 class="fw-bold pb-3">Skills</h1>
+                    <hr class="rounded-4 divide" />
+                    <p class="pb-3">Aspiring to join a reputable organization where I can apply my front-end development skills to
+                        create user-friendly and visually appealing interfaces. Passionate about tackling challenging
+                        projects, bringing innovative ideas, and continuously learning to grow in the field.</p>
+
+                    <div class="container skills-section">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="me-lg-3">
+                                    <div class="skill">
+                                        <div class="skill-name row fw-bold">
+                                            <p class="col-6 text-dark">HTML | HTML5</p>
+                                            <p class="col-6 text-end text-secondary">95%</p>
+                                        </div>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-bar html"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="skill-name row fw-bold">
+                                            <p class="col-6 text-dark">CSS | CSS3</p>
+                                            <p class="col-6 text-end text-secondary">90%</p>
+                                        </div>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-bar css"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="skill-name row fw-bold">
+                                            <p class="col-6 text-dark ">Javascript</p>
+                                            <p class="col-6 text-end text-secondary">80%</p>
+                                        </div>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-bar javascript"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+
+                                <div class="ms-lg-3">
+                                    <div class="skill">
+                                        <div class="skill-name row fw-bold">
+                                            <p class="col-6 text-dark">Bootstrap</p>
+                                            <p class="col-6 text-end text-secondary">88%</p>
+                                        </div>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-bar bootstrap"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="skill-name row fw-bold">
+                                            <p class="col-6 text-dark">ReactJS</p>
+                                            <p class="col-6 text-end text-secondary">85%</p>
+                                        </div>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-bar react"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill">
+                                        <div class="skill-name row fw-bold">
+                                            <p class="col-6 text-dark">JQuery</p>
+                                            <p class="col-6 text-end text-secondary">70%</p>
+                                        </div>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-bar jquery"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- skills section end -->
+
+                <!-- certificates section start-->
+                 <section class="certificate p-4 mt-5 mx-3 rounded-4 shadow">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 col-md-6 col-sm-6 text-center p-3 ">
+                                <i class="fa-solid fa-list border border-2 p-3 rounded-circle" data-aos=""></i>
+                                <h1 class="fw-bold" id="number">5</h1>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6 col-sm-6 text-center p-3">
+                                <i class="fa-solid fa-book border border-2 p-3 rounded-circle"></i>
+                                <h1 class="fw-bold" id="number1">4</h1>
+                                <p>Courses Completed</p>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6 col-sm-6 text-center p-3">
+                                <i class="fa-solid fa-stamp border border-2 p-3 rounded-circle"></i>
+                                <h1 class="fw-bold" id="number2">8</h1>
+                                <p>Certification</p>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-6 col-sm-6 text-center p-3">
+                                <i class="fa-solid fa-lightbulb border border-2 p-3 rounded-circle"></i>
+                                <h1 class="fw-bold" id="number3">3</h1>
+                                <p>Internships</p>
+                            </div>
+                        </div>
+                    </div>
+                 </section>
+                <!-- certificates section end-->
+
+                <!-- projects section start -->
+                 <section class="projects p-lg-4 p-md-4 p-sm-4 p-3 mt-5 mx-3 text-2xl rounded-4 shadow" id="project">
+                    <h1 class="fw-bold">Projects</h1>
+                    <hr class="rounded-4 divide"/>
+                    <div class="conatiner">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-4 col-12 ">
+                                <div class="card border-2 rounded-4 m-3 mx-sm-0 position-relative">
+                                    <img src="./assets/img/momondo.png" alt="dest1" class="rounded-top-4 p-2">
+                                    <div class="card-body">
+                                        <h4 class="text-coffee text-center fw-bold">Momondo</h4>
+                                        <p class="text-center">Travel booking website clone</p>
+                                        <a href="https://bhavikachavhan.github.io/momondo1/"
+                                            class="btn btn-warning rounded-circle position-absolute top-100 start-50 translate-middle"><i class="fa-solid fa-eye text-white p-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col-lg-4 col-sm-4 col-12 ">
+                                <div class="card border-2 rounded-4 m-3 mx-sm-0 position-relative">
+                                    <img src="./assets/img/coffee.png" alt="dest1" class="rounded-top-4 p-2">
+                                    <div class="card-body">
+                                        <h4 class="text-coffee text-center fw-bold">Coffee Website</h4>
+                                        <p class="text-center">Coffee shop website</p>
+                                        <a href="https://bhavikachavhan.github.io/coffee/"
+                                            class="btn btn-warning rounded-circle position-absolute top-100 start-50 translate-middle"><i class="fa-solid fa-eye text-white p-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col-lg-4 col-sm-4 col-12 ">
+                                <div class="card border-2 rounded-4 m-3 mx-sm-0 position-relative">
+                                    <img src="./assets/img/trendy.png" alt="dest1" class="rounded-top-4 p-2">
+                                    <div class="card-body">
+                                        <h4 class="text-coffee text-center fw-bold">Trendy-Era</h4>
+                                        <p class="text-center">E-commerce fashion website</p>
+                                        <a href="https://bhavikachavhan.github.io/trendy_era/"
+                                            class="btn btn-warning rounded-circle position-absolute top-100 start-50 translate-middle"><i class="fa-solid fa-eye text-white p-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- <div class="col-lg-6 col-sm-6 col-12 ">
+                                <div class="card border-2 rounded-4 m-3 mx-sm-0 position-relative">
+                                    <img src="./assets/img/port.png" alt="dest1" class=" rounded-top-4 p-2">
+                                    <div class="card-body">
+                                        <h4 class="text-coffee text-center fw-bold">Portfolio</h4>
+                                        <p class="text-center">Coffee 50% | Milk 50%</p>
+                                        <a href="#"
+                                            class="btn btn-warning rounded-pill fw-bold p-2 text-coffee position-absolute top-100 start-50 translate-middle"><i class="fa-solid fa-eye text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                 </section>
+                <!-- projects section end -->
+
+                <!-- services section start -->
+                <section class="services p-lg-4 p-md-4 p-sm-4 p-3 mt-5 mx-3 text-2xl rounded-4 shadow" id="service">
+
+                    <h1 class="fw-bold pb-3">Services</h1>
+                    <hr class="rounded-4 divide" />
+                    <div class="conatiner">
+                        <div class="row text-center pt-1 pb-2">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card border-2 rounded-3 my-3 mx-sm-0">
+                                    <div class="card-body">
+                                        <i class="fa-brands fa-web-awesome hov"></i>
+                                        <h5 class="fw-bold hov">Web Design</h5>
+                                        <p>Design user-friendly, visually appealing web interfaces.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card border-2 rounded-3 my-3 mx-sm-0">
+                                    <div class="card-body">
+                                        <i class="ri-layout-grid-fill"></i>
+                                        <h5 class="fw-bold">Responsive Web Development</h5>
+                                        <p>Develop responsive websites with modern technologies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card border-2 rounded-3 my-3 mx-sm-0">
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-code"></i>
+                                        <h5 class="fw-bold">Front-End Development</h5>
+                                        <p>Create dynamic interfaces with optimized JavaScript code.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card border-2 rounded-3 my-3 mx-sm-0">
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-rocket"></i>
+                                        <h5 class="fw-bold">Website Optimization</h5>
+                                        <p>Enhance website performance, accessibility, and SEO.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card border-2 rounded-3 my-3 mx-sm-0">
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-code-branch"></i>
+                                        <h5 class="fw-bold">Version Control</h5>
+                                        <p>Collaborate using Git and GitHub effectively.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="card border-2 rounded-3 my-3 mx-sm-0">
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <h5 class="fw-bold">Prototyping</h5>
+                                        <p>Design interactive prototypes to visualize ideas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- services section end -->
+
+
+                <!-- acedmics sectiom start -->
+                <section class="acedmics p-lg-4 p-md-4 p-sm-4 p-3 mt-5 mx-3 rounded-4 shadow" id="acedmic">
+                    <h1 class="fw-bold pb-3">Acedmics</h1>
+                    <hr class="rounded-4 divide" />
+                    <div class="container">
+
+                        <!-- First Content Section-->
+                        <div class="row align-items-center connecting-lines d-flex">
+                            <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+                                <div class="circle font-weight-bold"><i class="fa-solid fa-graduation-cap"></i></div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-8 ">
+                                <h6 class="fw-bold">Bachelor's Degree</h6>
+                                <h6 class="fw-bold">2020 - 2024</h6>
+                                <p>Computer Science Engineering at Mahakal Institute of Technology & Science Affliated Rajiv
+                                    Gandhi Prodhyogiki Vishvidhyalay, Bhopal</p>
+                            </div>
+                        </div>
+                        <!-- Path Line -->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            <div class="col-8">
+                                <hr />
+                            </div>
+                            <div class="col-2">
+                                <div class="corner left-bottom"></div>
+                            </div>
+                        </div>
+
+                        <!-- Second Content Section-->
+                        <div class="row align-items-center justify-content-end connecting-lines d-flex">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-8 text-right">
+                                <h6 class="fw-bold">Higher Secondary</h6>
+                                <h6 class="fw-bold">2018 - 2020</h6>
+                                <p>Maths. Physics. Chemistry Course done in Govt. Excellence School under Board of Secondary
+                                    Education Madhya Pradesh, Ujjain</p>
+                            </div>
+                            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                                <div class="circle font-weight-bold"><i class="fa-solid fa-school"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- acedmics sectiom start -->
+
+                <!-- contact section start -->
+                 <section class="contact p-lg-4 p-md-4 p-sm-4 p-3 my-5 mx-3 rounded-4 shadow" id="contact">
+                    <h1 class="fw-bold pb-3">Contact</h1>
+                    <hr class="rounded-4 divide" />
+                    <div class="conatiner my-5">
+                        <div class=" parent row my-4 hov">
+                            <div class="col-lg-1 col-md-1 col-sm-2 fsize2">
+                                <i class="fa-solid fa-phone child"></i>
+                            </div>
+                            <div class="col"> 
+                                <h6 class="fw-bold child">Phone</h6>
+                                <p>+91 8770306732</p>
+                            </div>
+                        </div>
+                        <div class="parent row my-4">
+                            <div class="col-lg-1 col-md-1 col-sm-2 fsize2">
+                                <i class="fa-solid fa-envelope child"></i>
+                            </div>
+                            <div class="col"> 
+                                <h6 class="fw-bold child">Email Address</h6>
+                                <p>bhervi2024@gmail.com</p>
+                            </div>
+                        </div> 
+                        <div class="parent row  mt-4">
+                            <div class="col-lg-1 col-md-1 col-sm-2 fsize2">
+                                <i class="fa-solid fa-location-dot child"></i>
+                            </div>
+                            <div class="col"> 
+                                <h6 class="fw-bold child">Location</h6>
+                                <p>Ujjain, Madhya Pradesh, India</p>
+                            </div>
+                        </div>    
+                       
+                    </div>
+                   
+                 </section>
+                <!-- contact section end -->
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Bootstrap JS -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+}
+
+.btn{
+  background-color:rgb(17, 101, 164);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.btn:hover{
+  background: #032b3e;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item:hover a{
+  color: #fff;
+  transform: translateX(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item:hover i{
+  color:blue;
+  transform: translateX(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-overlay i:hover{
+  color: blue;
+}
+/* all sections hover */
+section {
+  background-color: #fff;
+  transition: 1s;
+  transition-delay: 0s;
+  transition-duration: 2s;
+}
+
+section:hover {
+  background: #cbe1ed;
+}
+
+p{
+  color: rgb(91, 89, 89);
+}
+/* all sections hover */
+
+/* NAVBAR SECTION START*/
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  /* col-md-3 equivalent */
+  height: 100%;
+  background-color: black;
+  color: white;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 1050;
+}
+
+.navbar-overlay.active {
+  transform: translateX(0);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: rgb(207, 30, 30);
+  cursor: pointer;
+}
+
+/* Navbar visibility on large screens */
+@media (min-width: 992px) {
+  .navbar-overlay {
+    position: static;
+    transform: none;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: black;
+    z-index: 1;
+  }
+
+  .close-btn {
+    display: none;
+  }
+}
+
+/* Navbar overlay styling for medium screens */
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 1050;
+}
+
+.navbar-overlay.active {
+  transform: translateX(0);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navbar visibility on large screens */
+@media(max-width:350px){
+  .navbar-overlay{
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-overlay {
+    position: static;
+    transform: none;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: black;
+    z-index: 1050px;
+  }
+
+  .close-btn {
+    display: none;
+  }
+}
+.fsize {
+  font-size: 16px;
+}
+/* NAVBAR SECTION END */
+
+.content{
+  scroll-behavior: smooth;
+}
+
+/* scrolling content and navbar start*/
+.scrollable1::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable {
+  height: 100vh;
+  /* Full height */
+  overflow-y: scroll;
+  /* Enable vertical scrolling */
+
+}
+
+/* scrolling content and navbar end*/
+
+.home {
+  height: auto;
+}
+.home h{
+  font-size: 40px;
+}
+
+/* about section */
+.about ul li {
+  padding-bottom: 5px;
+}
+
+.size1 {
+  width: 110px;
+  height: 140px;
+}
+
+/* about section */
+
+/* skill section */
+.skill {
+  margin-bottom: 35px;
+  
+}
+
+.progress-bar-container {
+  background: #e0e0e0;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 4px;
+  background-color: rgb(17, 101, 164);
+}
+
+.progress-bar.html {
+  width: 95%;
+}
+
+.progress-bar.css {
+  width: 90%;
+}
+
+.progress-bar.javascript {
+  width: 80%;
+}
+
+.progress-bar.bootstrap {
+  width: 80%;
+}
+
+.progress-bar.react {
+  width: 85%;
+}
+
+.progress-bar.jquery {
+  width: 70%;
+}
+/* skill section */
+
+/* services section */
+.card {
+  cursor: grab;
+  border-block-color: gray;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card .card-body i {
+  font-size: x-large;
+  padding-bottom: 15px;
+  color: rgb(17, 101, 164);
+}
+
+
+/* services section */
+
+.circle {
+  padding: 16px;
+  border-radius: 30%;
+  background-color:  rgb(17, 101, 164);
+  color: #fff;
+  max-height: 50px;
+}
+
+@media (max-width: 452px) {
+  .circle {
+    padding: 10px;
+  }
+}
+
+.connecting-lines.row .col-2 {
+  align-self: stretch;
+}
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+
+.timeline hr {
+  border-top: 3px solid black;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+
+.timeline .corner {
+  border: 3px solid   rgb(17, 101, 164);
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+
+
+.divide {
+  margin-bottom: 30px;
+  margin-top: 0;
+  width: 40px;
+  border: 3px solid   rgb(17, 101, 164);
+  border-radius: 5px;
+}
+
+.certificate i{
+ font-size: 30px !important;
+ padding-bottom: 15px !important;
+ background-color: rgb(17, 101, 164);
+ color:#fff;
+ transition: transform 0.3s, box-shadow 0.3s;
+} 
+
+.certificate i:hover{
+  background: #022e57;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+ .fsize2{
+  font-size: 25px;
+ }
+ .contact i{
+  color: rgba(2, 37, 107, 0.877);
+
+ }
+ .parent:hover .child {
+  color: rgb(226, 14, 14);
+}
+
+.html{
+  animation: custom-progress-animation 3s ease-in-out forwards;
+}
+
+@keyframes custom-progress-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+.css{
+  animation: custom-progress-animation1 3s ease-in-out forwards;
+}
+@keyframes custom-progress-animation1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+.javascript{
+  animation: custom-progress-animation2 3s ease-in-out forwards;
+}
+@keyframes custom-progress-animation2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+.bootstrap{
+  animation: custom-progress-animation3 3s ease-in-out forwards;
+}
+@keyframes custom-progress-animation3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 88%;
+  }
+}
+
+.react{
+  animation: custom-progress-animation4 3s ease-in-out forwards;
+}
+@keyframes custom-progress-animation4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+.jquery{
+  animation: custom-progress-animation5 3s ease-in-out forwards;
+}
+@keyframes custom-progress-animation5 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-card {
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+@media(max-width:450px){
+  p, .btn, .about ul li{
+    font-size: 14px;
+  }
+ 
+}
+.projects .card .img{
+  height: 100px;
+}
